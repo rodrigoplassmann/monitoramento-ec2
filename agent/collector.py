@@ -3,8 +3,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+psutil.cpu_percent()
+
 data = {
-    "cpu": psutil.cpu_percent(interval=1),
+    "cpu": psutil.cpu_percent(),
     "ram": psutil.virtual_memory().percent,
     "disk": psutil.disk_usage("/").used/1024**3
 }
