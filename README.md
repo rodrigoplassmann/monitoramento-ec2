@@ -2,7 +2,7 @@
 Esse projeto utiliza um script em Python que coleta as informações de CPU(%), RAM(%) e disco(GB) de uma instância EC2 na AWS e envia esses dados para uma API Flask, que grava eles em um banco de dados MySQL.
 
 ## Arquitetura do projeto
-monitoring-system/
+monitoramento-ec2/
 
 ├── api/
 
@@ -155,3 +155,4 @@ SELECT * FROM metrics ORDER BY created_at DESC LIMIT 10;
 ```
 pkill -f app.py
 ```
+
