@@ -1,0 +1,5 @@
+[client]
+user=DB_USER_AQUI
+password=DB_PASSWORD_AQUI
+host=DB_HOST_AQUI
+database=DB_NAME_AQUI
