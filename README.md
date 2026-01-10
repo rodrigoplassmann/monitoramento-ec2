@@ -126,20 +126,20 @@ Definir de quanto em quanto em tempo o script cleanup.sh vai limpar o banco de d
 ```
 
 9. Inicializar o sistema de monitoramento
-Vá para o diretório api dentro da pasta do projeto
+- Vá para o diretório api dentro da pasta do projeto
 ```
 cd api
 nohup python3 app.py > /dev/null 2>&1 &
 ```
 
 10. Visualizar os dados através do Flask
-Abra um novo terminal e digite:
+- Abra um novo terminal e digite:
 ```
 curl localhost:5000/metrics
 ```
 
 11. Visualizar os dados através do MySQL
-Acesse o MySQL com usuário e nome do banco que você criou
+- Acesse o MySQL com usuário e nome do banco que você criou
 ```
 mysql monitoramento
 ```
@@ -153,5 +153,6 @@ SELECT * FROM metrics ORDER BY created_at DESC LIMIT 10;
 ```
 pkill -f app.py
 ```
+
 
 
