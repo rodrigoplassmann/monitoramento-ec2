@@ -20,8 +20,6 @@ monitoramento-ec2/
 
 ├── .env.example -> arquivo exemplo de variáveis de ambiente
 
-├── .my.cnf  -> arquivo de configuração do cliente MySQL (NUNCA VAI PARA O GIT)
-
 ├── .my.cnf.example -> arquivo exemplo de configuração do cliente MySQL
 
 ├── .gitignore
@@ -52,7 +50,7 @@ cd monitoramento-ec2
 pip3 install --user -r requirements.txt
 ```
 
-5. Criar um arquivo .env para configurar suas variáveis de ambiente
+5. Criar um arquivo .env para configurar suas variáveis de ambiente, certifique-se de que esse arquivo .env nunca vá para o Git
 ```
 cp .env.example .env
 nano .env
@@ -66,7 +64,7 @@ DB_NAME=DB_NAME_AQUI
 API_URL=API_URL_AQUI
 ```
 
-6. Criar um arquivo .my.cnf para configuração do seu cliente MySQL
+6. Criar um arquivo .my.cnf para configuração do seu cliente MySQL, certifique-se de que esse arquivo .my.cnf nunca vá para o Git
 ```
 cp .my.cnf.example ~/.my.cnf
 nano ~/.my.cnf
@@ -155,4 +153,5 @@ SELECT * FROM metrics ORDER BY created_at DESC LIMIT 10;
 ```
 pkill -f app.py
 ```
+
 
