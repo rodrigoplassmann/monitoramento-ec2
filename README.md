@@ -124,7 +124,7 @@ Definir de quanto em quanto tempo o collector.py vai coletar as métricas, nesse
 
 Definir de quanto em quanto em tempo o script cleanup.sh vai limpar o banco de dados, nesse exemplo uma vez por mês, todo dia 1 às 2 da manhã
 ```
-0 2 1 * * cd /home/ubuntu/monitoramento-ec2 && ./cleanup.sh
+0 2 1 * * cd /home/ubuntu/monitoramento-ec2 && ./scripts/cleanup.sh
 ```
 
 9. Inicializar o sistema de monitoramento
@@ -155,6 +155,7 @@ SELECT * FROM metrics ORDER BY created_at DESC LIMIT 10;
 ```
 pkill -f app.py
 ```
+
 
 
 
